@@ -1,4 +1,4 @@
-# AISS-CV Pandemic Package :book:
+# Pandemic Package: Detect Damaged Packages with a Jetson Nano :book:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
