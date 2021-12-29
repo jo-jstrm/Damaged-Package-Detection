@@ -8,9 +8,9 @@ Welcome to the repository of our group "Pandemic Package", an AISS-CV project fr
 The ReadMe files do not belong to our Documentation. We used Sphinx for a detailed documentation of our project, the system and the code itself. 
 Please follow these steps to view the documentation as html files on your local machine :
 1.  Clone this Repo
-2.  Open the [index.html](docs/build/html/index.html) in the [docs/build/html](docs/build/html) with a browser of your choice. 
+2.  Open the [index](docs/build/html/index.html) with a browser of your choice. 
 
-Alternatively, you can download a PDF version of the documentation [here](docs/build/latex/AISS-CV.pdf).
+Alternatively, you can download a PDF version of the documentation [here](https://github.com/jo-jstrm/Damaged-Package-Detection/blob/main/docs/AISS-CV.pdf).
 
 ## Final Presentation
 Our final presentation is stored in the docs folder.
