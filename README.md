@@ -1,7 +1,4 @@
 # AISS-CV Pandemic Package :book:
-[![pipeline status](https://git.scc.kit.edu/ukojp/aiss-cv/badges/master/pipeline.svg?key_text=Code+Quality&key_width=90)](https://git.scc.kit.edu/ukojp/aiss-cv/-/commits/master)
-[![Build status](https://dev.azure.com/JoelOswald/AISSCV/_apis/build/status/AISSCV-Python%20package-CI?branchName=master)](https://dev.azure.com/JoelOswald/AISSCV/_build/latest?definitionId=1)
-[![coverage report](https://git.scc.kit.edu/ukojp/aiss-cv/badges/master/coverage.svg?job=coverage)](https://git.scc.kit.edu/ukojp/aiss-cv/-/commits/master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
