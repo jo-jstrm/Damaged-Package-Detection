@@ -16,13 +16,10 @@ Please follow these steps to view the documentation as html files on your local 
 Alternatively, you can download a PDF version of the documentation [here](docs/build/latex/AISS-CV.pdf).
 
 ## Final Presentation
-Our [Final Presentation as PDF](docs/Final Presentation - PandemicPackage.pdf) is stored in the docs folder.
-Same goes for the [pptx version](docs/AISSCV-PandemicPackage-Final Presentation.pptx). 
+Our final presentation is stored in the docs folder.
 
 ## Data
 All images and annotations are stored in [BwCloud](https://bwsyncandshare.kit.edu/s/s5Yr4QQrCEfdigo).
-
-In addition all necessary data, as well as trained models are stored in our Azure File Share. Please contact [Joel](mailto:joel.oswald@student.kit.edu) to get access.
 
 # Tutorials for Users & Developers:
 Moved [here](Developer_Tutorials.md)
