@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-Welcome to the repository of our group "Pandemic Package", an AISS-CV project for the Summer Term 2021. This repository includes an object detection application for damages of packages based on state-of-the-art object detection frameworks. It is geared towards deployment on a Jetson Nano for on-edge inferences.
+Welcome to the repository of our group "Pandemic Package", an AISS-CV project from the summer term 2021 at Karlsruhe Institute of Technology. This repository includes an object detection application for damages of packages based on state-of-the-art object detection frameworks. It is geared towards deployment on a Jetson Nano for on-edge inferences.
 
 ## Our Documentation
 The ReadMe files do not belong to our Documentation. We used Sphinx for a detailed documentation of our project, the system and the code itself. 
