@@ -1,0 +1,14 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update && \
+    apt-get install -y \
+            git \
+            gcc \
+            build-essential
+
+RUN git clone https://github.com/AlexeyAB/darknet.git
+
+RUN cd darknet && \    
+    make

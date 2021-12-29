@@ -1,0 +1,43 @@
+apiVersion: '2019-12-01'
+location: westeurope
+name: aiss-tf-train-group
+properties:
+  containers:
+  - name: aiss-tf-train-container # NAMEN ersetzten
+    properties:
+      environmentVariables: []
+      image: aisscv.azurecr.io/aiss-cv-tensorboard:latest #ERSETZTEN
+      ports:
+      - port: 80
+      - port: 6010
+      - port: 22
+      resources:
+        requests:
+          cpu: 2.0
+          memoryInGB: 12
+          gpu:
+            count: 1
+            sku: K80
+      volumeMounts:
+      - mountPath: /home/app
+        name: filesharevolume
+  osType: Linux
+  restartPolicy: Always
+  ipAddress:
+    type: Public
+    ports:
+      - port: 80
+      - port: 6010
+    dnsNameLabel: aisscv-tf-train
+  volumes:
+  - name: filesharevolume
+    azureFile:
+      sharename: ***REMOVED***
+      storageAccountName: ***REMOVED***
+      storageAccountKey: ***REMOVED***
+  imageRegistryCredentials: # Credentials to pull a private image
+  - server: aisscv.azurecr.io
+    username: aisscv
+    password: ***REMOVED***
+tags: {}
+type: Microsoft.ContainerInstance/containerGroups

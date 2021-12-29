@@ -1,0 +1,4 @@
+## YOLO Data Preparation
+- Run `python pascal_voc_to_yolo.py --xml_dir "pascal_voc_xml/dir" -o "~/yolo-data/or/something/else" --darknet_dir "path/to/darknet/dir" --relative_img_path "/final/path/to/training-images"`
+    - For example: `python pascal_voc_to_yolo.py --xml_dir "/home/jo/Downloads/dataset_final_02/train_and_validation/annotations" -o "/home/jo/Downloads/yolo-data/training-data/dataset_final_02_2class" --darknet_dir "/home/jo/git/darknet" --relative_img_path "/home/jo/Downloads/yolo-data/training-data/dataset_final_02_2class"`
+- If you change the location of the training data, you also have to change the path in `train.txt`. You can do this with `python pascal_voc_to_yolo.py --relative_img_path "new/path/to/training-images" --train_txt_path "path/to/train.txt"`

@@ -1,0 +1,5 @@
+classes = 4
+train  = /home/jo/git/KIT/aiss-cv/data/yolo-training/4-class/aisscv-yolo-4class-train.txt
+valid  = /home/jo/git/KIT/aiss-cv/data/yolo-training/4-class/aisscv-yolo-4class-validation.txt
+names = /home/jo/git/KIT/aiss-cv/data/yolo-training/4-class/aisscv-yolo-4class.names
+backup = /home/jo/Downloads/yolo-data/backup/4-class

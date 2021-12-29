@@ -1,0 +1,12 @@
+insipid-sphinx-theme
+tensorflow
+pandas
+opencv-python >=3.2
+numpy
+pytest
+pytest-cov
+imgaug
+imageio
+jupyter
+imagecorruptions
+tqdm

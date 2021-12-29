@@ -1,0 +1,9 @@
+# Includes tensorflow with python3.6
+FROM nvcr.io/nvidia/tensorflow:21.05-tf2-py3
+
+# Includes JetPack (NVIDIA SDK for Jetson)
+# FROM nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf2.3-py3
+
+COPY . /aiss
+
+RUN echo "Hallo"

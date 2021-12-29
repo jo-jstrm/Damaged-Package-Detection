@@ -1,0 +1,8 @@
+[run]
+omit = 
+    *__main__*
+    aisscv/utils/pascal_voc_to_tfrecord.py
+    *.ipynb
+    aisscv/utils/crop_resize.py
+    aisscv/inference/*
+    aisscv/utils/read_to_tensorboard.py

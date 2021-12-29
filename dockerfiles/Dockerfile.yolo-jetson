@@ -1,0 +1,21 @@
+# FROM nvcr.io/nvidia/l4t-base:r32.5.0
+FROM nvcr.io/nvidia/deepstream-l4t:5.1-21.02-base
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update && \
+    apt-get install -y \
+            ssh \
+            git \
+            gcc \
+            libopencv-dev 
+
+RUN git clone https://github.com/AlexeyAB/darknet.git
+
+RUN cd darknet && \
+    sed -i "s|GPU=0|GPU=1|g" Makefile &&\
+    sed -i "s|CUDNN=0|CUDNN=1|g" Makefile &&\
+    # Uncomment the line below if Jetson supports half-precision
+    sed -i "s|CUDNN_HALF=0|CUDNN_HALF=1|g" Makefile &&\
+    sed -i "s|OPENCV=0|OPENCV=1|g" Makefile &&\    
+    make

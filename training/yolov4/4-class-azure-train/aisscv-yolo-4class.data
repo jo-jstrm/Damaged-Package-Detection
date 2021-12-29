@@ -1,0 +1,5 @@
+classes = 4
+train  = /training-data/yolo-data/4-class-azure-train/aisscv-yolo-4class-train.txt
+valid  = /training-data/yolo-data/4-class-azure-train/aisscv-yolo-4class-validation.txt
+names = /training-data/yolo-data/4-class-azure-train/aisscv-yolo-4class.names
+backup = /training-data/yolo-data/yolo-backup-weights/

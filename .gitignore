@@ -1,0 +1,43 @@
+*.vscode/
+__pycache__
+build
+data/local_tests
+data/images
+models/finetuned
+models/*
+*.pyc
+
+#Data Folder
+data/SET[1-4]_*
+
+# Images and annotations
+*.egg-info
+data/**/*.png
+data/**/*.jpg
+data/**/*.xml
+labeling/**/*.xml
+
+*.csv
+*.tar
+*.gz
+
+#Ignore tensorflow stuff
+*.record
+*.tfevents.*
+
+#Ignore ipynb checkpoints
+*-checkpoint.ipynb
+
+# Ignore CI Pipeline stuff
+.coverage
+.coverage.*
+
+# Ignore model checkpoints etc
+models/**/ckpt*
+models/**/checkpoint*
+models/**/*.pb
+models/**/*.config
+models/**/variables*
+models/**/*.weights
+models/**/*.cfg
+models/**/*.onnx

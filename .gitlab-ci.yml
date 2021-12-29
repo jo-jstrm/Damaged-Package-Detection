@@ -1,0 +1,29 @@
+# This file is a template, and might need editing before it works on your project.
+include:
+  template: Jobs/Code-Quality.gitlab-ci.yml
+
+coverage:
+  stage: test
+  image: python:3
+  script:
+    - apt-get update --quiet
+    - apt-get install ffmpeg libsm6 libxext6  -y
+    - pip install pytest pytest-cov
+    - pip install -r requirements.txt && pip install -e .
+    - pytest --cov=./aisscv/ ./tests
+    - coverage xml
+  artifacts:
+    reports:
+      cobertura: coverage.xml
+
+documentation_build:
+  stage: test
+  image: python:3
+  script:
+    - apt-get update --quiet
+    - apt-get install build-essential -y
+    - DEBIAN_FRONTEND=noninteractive apt-get install python3-sphinx -y
+    - pip install -r requirements.txt && pip install .
+    - make documentation
+    - test -f docs/build/html/index.html
+    - echo $?

@@ -1,0 +1,37 @@
+apiVersion: '2019-12-01'
+location: westeurope
+name: aiss-yolo-train
+properties:
+  containers:
+  - name: aiss-yolo-train-container
+    properties:
+      environmentVariables: []
+      image: 74797469/yolo-amd64-gpu:azure
+      ports:
+      - port: 80
+      - port: 8070
+      - port: 22
+      resources:
+        requests:
+          cpu: 2.0
+          memoryInGB: 16
+          gpu:
+            count: 1
+            sku: K80
+      volumeMounts:
+      - mountPath: /training-data
+        name: filesharevolume
+  osType: Linux
+  restartPolicy: Always
+  ipAddress:
+    type: Public
+    ports:
+      - port: 80
+      - port: 8070
+    dnsNameLabel: aisscv-yolo-train
+  volumes:
+  - name: filesharevolume
+    azureFile:
+      sharename: ***REMOVED***
+      storageAccountName: ***REMOVED***
+      storageAccountKey: ***REMOVED***
