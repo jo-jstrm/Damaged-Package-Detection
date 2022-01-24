@@ -32,6 +32,6 @@ properties:
   volumes:
   - name: filesharevolume
     azureFile:
-      sharename: ***REMOVED***
-      storageAccountName: ***REMOVED***
-      storageAccountKey: ***REMOVED***
+      sharename: # Fill
+      storageAccountName: # Fill
+      storageAccountKey: # Fill

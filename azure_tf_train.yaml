@@ -32,12 +32,12 @@ properties:
   volumes:
   - name: filesharevolume
     azureFile:
-      sharename: ***REMOVED***
-      storageAccountName: ***REMOVED***
-      storageAccountKey: ***REMOVED***
+      sharename: # Fill
+      storageAccountName: # Fill
+      storageAccountKey: # Fill
   imageRegistryCredentials: # Credentials to pull a private image
-  - server: aisscv.azurecr.io
-    username: aisscv
-    password: ***REMOVED***
+  - server: # Fill
+    username: # Fill
+    password: # Fill
 tags: {}
 type: Microsoft.ContainerInstance/containerGroups
