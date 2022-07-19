@@ -1,7 +1,9 @@
 # Pandemic Package: Detect Damaged Packages with a Jetson Nano :book:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Welcome to the repository of our group "Pandemic Package", a project in the course *Artificial Intelligence in Service Systems - Applications in Computer Vision* that took place during the summer term 2021 at Karlsruhe Institute of Technology. This repository includes an object detection application for damages of packages based on state-of-the-art object detection frameworks. It is geared towards deployment on a Jetson Nano for on-edge inference.
+Welcome to the repository of our group "Pandemic Package", a project in the course *Artificial Intelligence in Service Systems - Applications in Computer Vision* that took place during the summer term 2021 at Karlsruhe Institute of Technology. See the [**course website**](https://www.aiss-cv.com/projects/2021/pandemic-package) for additional information.
+
+This repository includes an object detection application for damages of packages based on state-of-the-art object detection frameworks. It is geared towards deployment on a Jetson Nano for on-edge inference.
 
 <center><img src="docs/source/img/final_example2.png" alt="Example Detection" width="600"/></center>
 
